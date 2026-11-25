@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pallavi Pathak | Student Portfolio</title>
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f5ede3; --bg2:#ebdfd0; --card:#fbf7f1; --ink:#4a3f35; --muted:#85766a; --accent:#b08968; --line:#dccdb9;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#2b2520;--bg2:#332c26;--card:#3a322b;--ink:#f0e6da;--muted:#bba998;--accent:#d2a67e;--line:#4d4339;}
+}
+:root[data-theme="dark"]{--bg:#2b2520;--bg2:#332c26;--card:#3a322b;--ink:#f0e6da;--muted:#bba998;--accent:#d2a67e;--line:#4d4339;}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.7}
+.wrap{max-width:860px;margin:0 auto;padding:0 22px}
+header{background:var(--bg2);text-align:center;padding:84px 22px 64px;border-bottom:1px solid var(--line)}
+header h1{margin:0;font-size:clamp(2rem,6vw,3.2rem);letter-spacing:.14em;font-weight:400}
+header p{margin:14px 0 0;font:.85rem/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+nav{display:flex;justify-content:center;gap:26px;margin-top:30px;flex-wrap:wrap;font:.85rem system-ui,sans-serif}
+nav a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+nav a:hover{border-color:var(--accent)}
+section{padding:60px 0 8px}
+h2{font-weight:400;font-size:1.7rem;margin:0 0 6px;letter-spacing:.04em}
+h2::after{content:"";display:block;width:44px;height:2px;background:var(--accent);margin-top:10px}
+.sub{color:var(--muted);font-style:italic;margin:10px 0 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-top:20px}
+.card h3{margin:0 0 4px;font-weight:400;font-size:1.2rem}
+.tag{font:.78rem system-ui,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+ul{padding-left:20px;margin:14px 0 0}
+li{margin:6px 0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.chips span{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:6px 16px;font:.9rem system-ui,sans-serif}
+.num{font-size:2rem;color:var(--accent);opacity:.7;line-height:1}
+a.btn{display:inline-block;margin-top:14px;padding:9px 20px;border:1px solid var(--accent);border-radius:999px;color:var(--accent);text-decoration:none;font:.9rem system-ui,sans-serif}
+a.btn:hover{background:var(--accent);color:var(--card)}
+p.k{margin:12px 0 0}
+p.k b{font-weight:600}
+.note{text-align:center;font-style:italic;font-size:1.1rem;padding:26px;background:var(--bg2);border-radius:14px;margin-top:20px}
+footer{text-align:center;color:var(--muted);font:.8rem system-ui,sans-serif;padding:48px 22px 56px}
+</style>
+</head>
+<body>
+<header>
+  <h1>PALLAVI PATHAK</h1>
+  <p>Student Portfolio &nbsp;|&nbsp; Science • Technology • Creative Learning</p>
+  <nav><a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#explore">Explore</a><a href="#projects">Projects</a></nav>
+</header>
+
+<main class="wrap">
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="card"><p style="margin:0">I am pursuing B.Sc. Biology at Shaheed Nandkumar Patel Vishwavidyalaya and learning Computer Science at NavGurukul. I enjoy exploring new concepts and understanding how science and technology connect with everyday life. I like trying out ideas, learning by doing, and finding practical ways to use what I learn.</p></div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <div class="grid">
+      <div class="card"><div class="tag">Degree</div><h3>B.Sc. Biology</h3><p style="margin:0;color:var(--muted)">Shaheed Nandkumar Patel Vishwavidyalaya (SNPV)</p></div>
+      <div class="card"><div class="tag">Learning</div><h3>Computer Science</h3><p style="margin:0;color:var(--muted)">NavGurukul</p></div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills &amp; Interests</h2>
+    <div class="chips">
+      <span>Basic Python programming</span>
+      <span>Google Sheets &amp; dashboard creation</span>
+      <span>Organising and presenting information</span>
+      <span>Designing English activities for students</span>
+      <span>Learning through projects and experimentation</span>
+    </div>
+    <p class="sub">Interests: science, technology, creative learning and practical problem-solving.</p>
+  </section>
+
+  <section id="explore">
+    <h2>What I Want to Explore</h2>
+    <div class="card"><p style="margin:0">I want to explore how science, technology and creativity can come together in practical projects. I am interested in learning from people with different backgrounds, experimenting with new tools, and creating learning experiences that make ideas easier to understand.</p></div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <p class="sub">A few things I have explored and built</p>
+
+    <div class="card">
+      <div class="num">01</div>
+      <h3>Convocation Registration Dashboard</h3>
+      <div class="tag">Tool: Google Sheets</div>
+      <p class="k">I created a dashboard to bring convocation registration information into one view. It presents registration totals, arrival status, gender distribution, programme- and discipline-wise registrations and fees, along with batch-wise registration figures. Charts and summary figures make the information easier to scan.</p>
+      <a class="btn" href="https://docs.google.com/spreadsheets/d/17sPHgHJrHj5-F_K-hr2VaZoJYDK_RxyvuVS3rWPfqH4/edit?usp=sharing" target="_blank" rel="noopener">Open Convocation Registration Dashboard</a>
+    </div>
+
+    <div class="card">
+      <div class="num">02</div>
+      <h3>MaggiMaker</h3>
+      <div class="tag">Language: Python</div>
+      <p class="k">MaggiMaker is a small, interactive console project that simulates the steps of making Maggi. The user can enter the water amount and temperature, choose the number of noodle packets, confirm the spices, and select optional ingredients. At the end, the program displays a summary of the choices.</p>
+      <p class="k"><b>Concepts practised:</b> classes and objects, inheritance, methods, user input, conditions, loops, lists and dictionaries.</p>
+      <p class="k"><b>What I learned:</b> I practised organising a program into methods and using object-oriented programming concepts to represent a familiar everyday process.</p>
+      <a class="btn" href="https://github.com/pallavipathak25/maggi-maker/commit/9ce8eaf5e70d40566849a17ab4930496c1c2a0bc" target="_blank" rel="noopener">View project code</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>A Note About My Learning</h2>
+    <div class="note">I am still learning, and I see each project as a chance to ask questions, try something new and improve through practice.</div>
+  </section>
+</main>
+
+<footer>© Pallavi Pathak · Student Portfolio</footer>
+</body>
+</html>
